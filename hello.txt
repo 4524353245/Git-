@@ -1,0 +1,73 @@
+hello world
+
+ctrl+l 清屏
+
+前两页打印在一页上
+每次都要有评分
+结对编程的部分只写自己的总结
+
+
+因为git是分布式系统，所以每一台机器都要自报家门：
+git config --global user.name " "
+git config --global user.email " "
+
+pwd 显示当前目录               
+
+cd e：git_status  进入git_status文件夹
+
+mkdir learn_git  创建一个空目录 learn_git
+
+cd learn_git  进入该文件夹
+
+如果使用windows系统的话，目录名不要有中文，避免错误
+
+通过git init 命令把当前目录变为git可以管理的仓库
+
+git是没办法跟踪Word文件的改动的
+
+廖先生建议使用notepad++代替记事本，把默认编码改为utf-8 without BOM
+
+在learn_git里面添加自己的文件，只有放在这个里面，git才找的到
+
+git add hello.txt 将文件添加到仓库
+
+执行上一步命令之后没有消息显示，UNIX的哲学：没有消息就是好消息
+
+git commit -m "first wrote of process" 用命令git commit告诉git将文件上传到git，
+后面的-m表示添加的说明，后面的内容根据自己的修改去写
+
+
+为什么添加文件需要add、commit两步呢？
+因为commit一次可以提交很多文件
+$ git add file1.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files."
+
+如果我们继续更改 hello.txt 文件的话，输入 git status，
+git就会提示我们文件已经被更改了
+
+git diff 查看修改的地方
+
+继续git add ，git commit 提交修改后的hello.txt文件
+
+git status 告诉我们没有需要提交的修改，当前目录是干净的 
+
+使用git status 可以实时掌握工作区的状态
+
+git log 查看提交日志
+HEAD 所指向的就是当前最新的版本
+简洁输出日志：git log --pretty=oneline
+这样子输出的就只是commit id 和自己的备注
+
+需要返回上一个版本号的时候：
+git reset --hard HEAD~1 表示返回当前版本的上一个版本
+cat hello.txt 查看内容
+当前输入git log ，日志中的最新版本是当前返回到的版本
+
+需要从返回的版本号再次回到之前的那个版本
+git reset --hard ***  (此处为commit id)
+git reflog 可以查看每一次的命令，就可以找到某个版本的commit id了
+总结：git log 用于确定回到历史版本；git reflog 用于回到未来的版本
+
+
+
