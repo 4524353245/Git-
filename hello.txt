@@ -52,6 +52,8 @@ git diff 查看修改的地方
 
 git status 告诉我们没有需要提交的修改，当前目录是干净的 
 
+
+
 使用git status 可以实时掌握工作区的状态
 
 git log 查看提交日志
@@ -107,6 +109,8 @@ Git里面的复制：Ctrl+insert  粘贴：shift+insert
 $ git remote add origin git@github.com:michaelliao/learngit.git
 第一次推送 git push -u orgin master
 之后：git push orgin master
+
+it's fun
 
 
 本地和远程的文件合并之后才能上传新的本地文件
