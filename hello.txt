@@ -105,8 +105,8 @@ Git里面的复制：Ctrl+insert  粘贴：shift+insert
 
 关联远程库
 $ git remote add origin git@github.com:michaelliao/learngit.git
-第一次推送 git -u orgin master
-之后：git orgin master
+第一次推送 git push -u orgin master
+之后：git push orgin master
 
 
 本地和远程的文件合并之后才能上传新的本地文件
