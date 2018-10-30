@@ -91,5 +91,15 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都
 命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，
 但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容
 
+当输入git diff 无法退出时 输入 q 就可以退出了
+
+cd~(进入用户主目录)
+cd .ssh(进入.ssh目录)
+ls(列出.ssh目录的文件，可以看到id_rsa  id_rsa.pub两个文件)
+cat ~/.ssh/id_rsa.pub(可以看到id_rsa.pub文件的内容，复制即可)
+
+Git里面的复制：Ctrl+insert  粘贴：shift+insert
+
+
 
 
