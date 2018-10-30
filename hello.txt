@@ -110,9 +110,19 @@ $ git remote add origin git@github.com:michaelliao/learngit.git
 第一次推送 git push -u orgin master
 之后：git push orgin master
 
-it's fun
 
 
 本地和远程的文件合并之后才能上传新的本地文件
+git pull orgin master
+
+创建并切换到新的分支： git checkout -b dev
+git branch 查看所有分支，当前分支前面会有一个*
+
+切回master分支：  git checkout master
+把Dev分支的工作添加到master上面：git merge dev
+git branch -d dev 删除Dev分支
+
+
+
 
 
