@@ -1,0 +1,32 @@
+1. git init 初始化
+2. 设置签名 目的是为了与其他的开发者区分开
+    git config user.name lucas
+    git config user.email 1095100975@qq.com
+3. 查看git状态,工会区以及暂存区：
+    git status
+4. 只从缓存区删除add的文件:
+    git rm --cached readme.txt
+5. 提交操作
+    git commit -m "First Commit" XXX
+6. 查看提交历史
+    git log
+    git log --pretty=oneline
+    git log oneline
+    git reflog 提示移动指针需要的步数
+7. 版本回退
+    git reflog
+    git reset --hard 索引
+8. 添加远程仓库地址
+    git remote add origin  XXX
+    git remote -v
+9. 向远程仓库推送自己的本地代码
+    git push -u origin master
+10. 从远程仓库 clone
+    git clone 远程仓库地址   （如果失败的话 使用 git代替https）
+
+token     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
+
+
+
+
+
