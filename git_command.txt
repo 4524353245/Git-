@@ -24,6 +24,11 @@
 10. 从远程仓库 clone
     git clone 远程仓库地址   （如果失败的话 使用 git代替https）
 
+
+切换ssh的方式pull和push
+git remote -v
+git remote add origin git@XXX
+
 token     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
 
 
